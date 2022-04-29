@@ -1,11 +1,16 @@
 function cargarJson() {
-    var url = "http://demo6497253.mockable.io/categoria/tecnologia";
+    var url = "https://carlosreneas.github.io/endpoints/categoria_tecnologia.json";
 
     fetch(url)
         .then(response => response.json())
         .then(data => generarNoticias(data))
-        .catch(error => {});
+        .catch(function (){
+            const tecnologia1 = document.getElementById("tabla-tecnologia");
+
+            tecnologia1.innerHTML+="<div><h1>No hay noticias disponibles</h1></div>"
+        });
 }
+
 
 function generarNoticias(json) {
     const tabla = document.getElementById("tabla-tecnologia");

@@ -1,11 +1,14 @@
-
 function cargarJsonNoticias() {
-    var url = "http://demo6497253.mockable.io/noticias";
+    var url = "https://carlosreneas.github.io/endpoints/noticias.json";
 
     fetch(url)
         .then(response => response.json())
         .then(data => generarNoticiasInicio(data))
-        .catch(error => {});
+        .catch(function (){
+            const noticias1 = document.getElementById("noticias");
+
+        noticias1.innerHTML+="<div><h1>No hay noticias disponibles</h1></div>"
+        });
 }
 
 function generarNoticiasInicio(json) {

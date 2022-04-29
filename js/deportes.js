@@ -1,11 +1,16 @@
 function cargarJsonDeportes() {
-    var url = "http://demo6497253.mockable.io/categoria/deporte";
+    var url = "https://carlosreneas.github.io/endpoints/categoria_deporte.json";
 
     fetch(url)
         .then(response => response.json())
         .then(data => generarDeportes(data))
-        .catch(error => {});
+        .catch(function (){
+            const deportes1 = document.getElementById("tabla-deportes");
+
+        deportes1.innerHTML+="<div><h1>No hay noticias disponibles</h1></div>"
+        });
 }
+
 
 function generarDeportes(json) {
     const tabla = document.getElementById("tabla-deportes");
