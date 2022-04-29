@@ -1,0 +1,179 @@
+body{
+  border: black;
+}
+header {
+    height: 150px;
+    background-color: #fff;
+    padding-right: 20px;
+}
+
+header label,
+h2 {
+    color: black;
+}
+
+h1 {
+    color: rgb(50, 81, 99);
+}
+
+#logo-circulo {
+    height: 120px;
+    float: right;
+    padding-top: 10px;
+}
+
+.hd-logo h2 {
+    float: left;
+    padding-left: 0;
+    vertical-align: middle;
+    margin-top: 60px;
+}
+
+.hd-label label {
+    float: right;
+    padding-top: 60px;
+    padding-right: 15px;
+}
+.navbar {
+    background-color: #fff;
+}
+
+.busqueda {
+    background-color: rgb(49, 158, 221);
+}
+
+.btn {
+    background-color: rgb(49, 158, 221);
+    color: black;
+}
+
+nav {
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0;
+    border-right: 3px solid;
+    height: 35px;
+    vertical-align: middle;
+    width: 110px;
+    font-size: large;
+}
+
+nav ul li:last-child {
+    padding: 0;
+    margin: 0;
+    border-right: none;
+}
+
+.active {
+    background-color: gray;
+    height: 35px;
+    border-right: 7px solid;
+}
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.customers td,
+.customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.customers td:first-child,
+td:last-child {
+    width: 1.5em;
+}
+
+.customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.customers tr:nth-child(odd) {
+    background-color: rgb(49, 158, 221);
+    color: black;
+}
+
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(49, 158, 221);
+    color: black;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.footer,
+.info-footer {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.info-footer a {
+    text-decoration: none;
+}
+
+.fondo{
+    background-color: gray;
+    height: 40px;
+    padding-bottom: 20px;
+}
+.le {
+    font-size: 18px;
+} 
+.letra{
+    font-size: 15px;
+}
+.bloque{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(49, 158, 221);
+}
+footer p {
+    text-align: center;
+    color:black;
+}
+#logo-circulo-footer {
+    height: 80px;
+}
+
+.labels-info {
+    display: flex;
+    align-items: center;
+}
+
+footer div {
+    background-color: darkgray;
+}
+
+footer div p {
+    color: black;
+}
+@media all and (max-width:700px){
+    #logo-circulo {
+        height: 80px;
+        float: right;
+        padding-top: 10px;
+    }
+    .hd-label label {
+        float: right;
+        padding-top: 30px;
+        padding-right: 10px;
+    }
+    .hd-logo h2 {
+        float: left;
+        padding-left: 0;
+        vertical-align: middle;
+        margin-top: 60px;
+        font-size: small;
+    }
+}
